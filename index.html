@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio (Demo)</title>
+  <!-- css 폴더 안에 있는 CSS 파일 연결 -->
+  <link rel="stylesheet" href="css/custom-framework.css">
+</head>
+<body>
+
+  <!-- 상단 네비게이션 -->
+  <header>
+    <nav class="navbar">
+      <a href="#" class="navbar-brand">DevPortfolio</a>
+      <ul class="navbar-nav">
+        <li><a href="#about">소개</a></li>
+        <li><a href="#skills">기술 스택</a></li>
+        <li><a href="#contact">방명록</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 메인 콘텐츠 영역 -->
+  <main class="container">
+    
+    <!-- 안내 메시지 (학습용 문구 반영) -->
+    <div class="alert alert-info" role="alert">
+      💡 <strong>안내:</strong> 본 웹페이지는 커스텀 CSS 프레임워크 실습 및 학습 목적으로 작성된 가상의 포트폴리오입니다.
+    </div>
+
+    <!-- 프로필 섹션 -->
+    <section class="card profile-header">
+      <!-- 1번 방법: 저작권 100% 안전한 오픈소스 이니셜 아바타 적용 -->
+      <img 
+        src="https://ui-avatars.com/api/?name=Gildong+Hong&background=0366d6&color=fff&size=100" 
+        alt="프로필 이미지" 
+        class="avatar"
+      >
+      <div>
+        <h2>홍길동 (Gildong Hong)</h2>
+        <p style="color: var(--text-muted); margin-bottom: 8px;">프론트엔드 개발자 지망생</p>
+        <div>
+          <span class="badge badge-primary">HTML/CSS</span>
+          <span class="badge badge-success">JavaScript</span>
+          <span class="badge badge-danger">Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 자기소개 섹션 -->
+    <section class="card" id="about">
+      <h3>About Me</h3>
+      <p style="margin-top: 10px;">
+        안녕하세요! 웹 기술을 배우고 나만의 프레임워크를 만들어보는 것을 좋아하는 개발자입니다. 
+        사용자 경험과 깔끔한 코드 구조에 관심이 많습니다.
+      </p>
+    </section>
+
+    <!-- 기술 스택 섹션 -->
+    <section class="card" id="skills">
+      <h3>Skills & Level</h3>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>기술</th>
+              <th>숙련도</th>
+              <th>상태</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML/CSS</td>
+              <td>중급</td>
+              <td><span class="badge badge-success">주력</span></td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>초급</td>
+              <td><span class="badge badge-primary">학습중</span></td>
+            </tr>
+            <tr>
+              <td>Git & GitHub</td>
+              <td>초급</td>
+              <td><span class="badge badge-primary">학습중</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 방명록 / 문의 폼 섹션 -->
+    <section class="card" id="contact">
+      <h3>Contact & Message</h3>
+      <form action="#" method="post" style="margin-top: 15px;">
+        <div class="form-group">
+          <label for="user-name">이름</label>
+          <input type="text" id="user-name" name="name" class="form-control" placeholder="이름을 입력하세요" required>
+        </div>
+        <div class="form-group">
+          <label for="user-message">메시지</label>
+          <textarea id="user-message" name="message" class="form-control" rows="4" placeholder="남기실 말씀을 적어주세요" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">전송하기</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- 하단 푸터 (학습용 문구 추가 표기) -->
+  <footer class="footer">
+    <p>© 2026 Gildong Hong. All rights reserved.</p>
+    <p style="margin-top: 5px; color: var(--text-muted); font-size: 0.8rem;">
+      ※ 본 페이지에 사용된 일부 정보는 학습 및 실습을 위한 가상의 데이터입니다.
+    </p>
+  </footer>
+
+</body>
+</html>
